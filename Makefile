@@ -11,23 +11,25 @@ CFLAGS_EXTRA = $(shell pkg-config --cflags allegro-5 allegro_main-5 allegro_font
 
 # Compiler (use gcc or clang)
 CC = gcc
-# Alternative: CC = clang
 
 # Compiler flags
 CFLAGS = -Wall -Wextra -std=c99 $(CFLAGS_EXTRA)
 
 # Source files
-SRCS = src/main.c
+SOURCES = $(wildcard src/*.c) \
+          $(wildcard src/asteroid/*.c) \
+          $(wildcard src/blast/*.c) \
+          $(wildcard src/spaceship/*.c)
 
 # Object files
-OBJS = $(SRCS:.c=.o)
+OBJECTS = $(SOURCES:.c=.o)
 
 # Default target
 all: $(TARGET)
 
 # Build the executable
-$(TARGET): $(OBJS)
-	$(CC) -o $@ $(OBJS) $(LDFLAGS)
+$(TARGET): $(OBJECTS)
+	$(CC) -o $@ $(OBJECTS) $(LDFLAGS)
 
 # Compile source files — include Allegro headers
 %.o: %.c
@@ -35,7 +37,7 @@ $(TARGET): $(OBJS)
 
 # Clean build artifacts
 clean:
-	-rm -f $(OBJS) $(TARGET)
+	-rm -f $(OBJECTS) $(TARGET)
 
 # Rebuild everything
 rebuild: clean all
