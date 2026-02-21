@@ -1,10 +1,15 @@
 # Blasteroids
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Genre](https://img.shields.io/badge/Space%20Shooter-black?logo=rocket)
 
-A space shooter game inspired by the classic Asteroids.
+[![Build Status](https://github.com/srg-bnd/Blasteroids/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/srg-bnd/Blasteroids/actions/workflows/main.yml)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+![C Standard](https://img.shields.io/badge/C%20Standard-C99-blue?logo=c)
+[![Library](https://img.shields.io/badge/Allegro%20-5.2-purple?logo=library)](https://liballeg.org/)
 
-Developed with [Allegro](https://liballeg.org/)
+![Platform](https://img.shields.io/badge/macOS-lightgrey?logo=apple)
+![Platform](https://img.shields.io/badge/Linux-white?logo=linux&logoColor=black)
+
 
 ## Gameplay
 
@@ -13,24 +18,12 @@ Developed with [Allegro](https://liballeg.org/)
 * Fire bullets with the spacebar to destroy asteroids.
 * Survive for a high score!
 
-## Controls
-
-* **Up Arrow / W** — Thrust forward.
-* **Left Arrow / A** — Rotate left.
-* **Right Arrow / D** — Rotate right.
-* **Spacebar** — Fire bullets.
-
-## Requirements
-
-* C compiler (GCC or Clang recommended).
-* Make (for build).
-* Allegro 5 (game library).
 
 ## Installation
 
 1. [Install Allegro](https://github.com/liballeg/allegro_wiki/wiki/Quickstart).
 2. Use `make` to build the game.
-3. Run the game `./Blasteroids`
+3. Run the game: `./Blasteroids`
 
 ## License
 
