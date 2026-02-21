@@ -1,7 +1,9 @@
+// Core
 #include <allegro5/allegro5.h>
 #include <stdbool.h>
 
-void runGame() {
+void runGame()
+{
     al_init();
     al_install_keyboard();
 
@@ -29,6 +31,7 @@ void runGame() {
         {
             break;
         }
+
         if(redraw && al_is_event_queue_empty(queue))
         {
             al_flip_display();
