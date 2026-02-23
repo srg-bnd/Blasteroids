@@ -5,9 +5,9 @@
 TARGET = Blasteroids
 
 # Get linker flags from pkg-config
-LDFLAGS = $(shell pkg-config --libs allegro-5 allegro_main-5 allegro_font-5)
+LDFLAGS = $(shell pkg-config --libs allegro-5 allegro_main-5 allegro_font-5 allegro_primitives-5 allegro_color-5)
 # Get compiler flags (include paths) from pkg-config
-CFLAGS_EXTRA = $(shell pkg-config --cflags allegro-5 allegro_main-5 allegro_font-5)
+CFLAGS_EXTRA = $(shell pkg-config --cflags allegro-5 allegro_main-5 allegro_font-5 allegro_primitives-5 allegro_color-5)
 
 # Compiler (use gcc or clang)
 CC = gcc

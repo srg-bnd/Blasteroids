@@ -18,6 +18,7 @@
 * Fire bullets with the spacebar to destroy asteroids.
 * Survive for a high score!
 
+![Blasteroids](docs/Blasteroids.gif)
 
 ## Installation
 

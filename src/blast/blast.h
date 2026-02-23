@@ -1,16 +1,8 @@
 // Blast
 
-#include <allegro5/allegro5.h>
+#include "../types.h"
 
-typedef struct
-{
-    float screenX;
-    float screenY;
-    float orientation;
-    float speed;
-    int isDone;
-    ALLEGRO_COLOR color;
-} Blast;
+Blast* createBlast(Spaceship*);
 
-Blast createBlast();
-Blast drawBlast(Blast*);
+int drawBlast(Blast*);
+int pushBlast(Blast*);

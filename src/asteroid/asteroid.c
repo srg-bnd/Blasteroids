@@ -8,7 +8,9 @@ Asteroid createAsteroid()
     return asteroid;
 }
 
-Asteroid drawAsteroid(Asteroid* asteroid)
+int drawAsteroid(Asteroid* asteroid)
 {
-    // TODO
+    (void)asteroid;
+
+    return 0;
 }
